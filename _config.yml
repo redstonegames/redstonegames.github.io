@@ -1,8 +1,8 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Redstone Games
+email: helpdesk@redstonecompany.mobi
+url: https://redstonegames.github.io
+description: "Welcome to Redstone Games. All best casual games for mobile platforms!"
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -15,7 +15,7 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: Redstone Games
   location: Location
   social: Around the Web
   credits: Credits
@@ -23,15 +23,9 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: http://twitter.com/redstonemobi
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: https://www.facebook.com/redstonegames
 
 # Postal address (add as many lines as necessary)
 address:
