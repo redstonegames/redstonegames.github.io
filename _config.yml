@@ -1,8 +1,8 @@
 # Site settings
 title: Redstone Games
 email: helpdesk@redstonecompany.mobi
-url: https://redstonegames.github.io
-description: "Welcome to Redstone Games. All best casual games for mobile platforms!"
+url: https://redstonegames.mobi
+description: "Welcome to Redstone Games. Publishing best casual games for mobile platforms!"
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -16,9 +16,7 @@ color:
 # Footer settings
 footer:
   copyright: Redstone Games
-  location: Location
   social: Around the Web
-  credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -28,12 +26,12 @@ social:
     url: https://www.facebook.com/redstonegames
 
 # Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+#address:
+#  - line: 3481 Melrose Place
+#  - line: Beverly Hills, CA 90210
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+#credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
