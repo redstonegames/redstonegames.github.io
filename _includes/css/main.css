@@ -329,6 +329,16 @@ footer {
     color: #fff;
 }
 
+footer a {
+    color: #afafaf;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #afafaf;
+    text-decoration: none;
+}
+
 footer h3 {
     margin-bottom: 30px;
 }
