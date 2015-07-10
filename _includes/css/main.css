@@ -329,12 +329,11 @@ footer {
     color: #fff;
 }
 
-footer a {
-    color: #afafaf;
-    text-decoration: none;
-}
-
-footer a:hover {
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a.active {
     color: #afafaf;
     text-decoration: none;
 }
