@@ -1,0 +1,8 @@
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'Prototype';
+  src: url('../css/font-prototype/fonts/Prototype.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
