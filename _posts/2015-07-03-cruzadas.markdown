@@ -3,7 +3,7 @@ layout: default
 modal-id: 4
 date: 2015-07-02
 img: cruzadas.jpg
-ios-url: http://appstore.com/palavrascruzadasredstone
+ios-url: https://itunes.apple.com/app/id917832873?mt=8&ct=redstonegames.mobi
 android-url: https://play.google.com/store/apps/details?id=mobi.redstonegames.crossword
 alt: image-alt
 description: Gosta de treinar o seu raciocínio e os seus conhecimentos sobre língua portuguesa e os temas mais variados? Então este é o jogo perfeito para você. As Palavras Cruzadas são um passatempo tradicional, muito comum em jornais e revistas e, agora, disponível para o seu tablet ou celular!
