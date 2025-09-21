@@ -1,29 +1,58 @@
- <!-- Portfolio Modals -->
- {% for post in site.posts %}
+<!-- Portfolio Modals -->
+{% for post in site.posts %}
     <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
-                    <div class="rl">
-                    </div>
+                    <div class="rl"></div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
+                            <!-- DEBUG: modal-id = {{ post.modal-id }} -->
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Download:
-                                    <strong><a href="{{ post.ios-url }}">iOS</a></strong>
-                                    <strong>   |   </strong>
-                                    <strong><a href="{{ post.android-url }}">Android</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                            {% assign modal_id_numeric = post.modal-id | plus: 0 %}
+                            {% if modal_id_numeric == 4 %}
+                              {% assign badge_lang = "pt-br" %}
+                              {% assign play_alt = "Disponível no Google Play" %}
+                              {% assign ios_alt = "Baixar na App Store" %}
+                              {% assign play_badge = "pt-br_badge_web_generic.png" %}
+                            {% else %}
+                              {% assign badge_lang = "en-us" %}
+                              {% assign play_alt = "Get it on Google Play" %}
+                              {% assign ios_alt = "Download on the App Store" %}
+                              {% assign play_badge = "en_badge_web_generic.png" %}
+                            {% endif %}
+
+                            <div style="display: flex; align-items: center; justify-content: center; gap: 0; margin: 24px 0;">
+                              {% if post.android-url %}
+                                <a href="{{ post.android-url }}" target="_blank" rel="noopener"
+                                  style="display: flex; justify-content: center; align-items: center; width: 180px; padding: 0 8px;">
+                                  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/{{ play_badge }}"
+                                      alt="{{ play_alt }}"
+                                      style="height: {% if badge_lang == 'pt-br' %}68px{% else %}78px{% endif %};">
+                                </a>
+                              {% endif %}
+
+                              {% if post.ios-url %}
+                                <a href="{{ post.ios-url }}" target="_blank" rel="noopener"
+                                  style="display: flex; justify-content: center; align-items: center; width: 180px; padding: 0 8px;">
+                                  <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/{{ badge_lang }}"
+                                      alt="{{ ios_alt }}"
+                                      style="height: {% if badge_lang == 'pt-br' %}52px{% else %}53px{% endif %};">
+                                </a>
+                              {% endif %}
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <i class="fa fa-times"></i> Close
+                            </button>
                         </div>
                     </div>
                 </div>
